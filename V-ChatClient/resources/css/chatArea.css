@@ -1,0 +1,14 @@
+
+#mainPane{
+
+
+    -fx-background-image: url("../images/bgvchat10.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover,auto;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: black;
+    -fx-border-width: 0.15;
+
+
+}

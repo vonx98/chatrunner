@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="520.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.profileWindowController">
+   <children>
+      <ImageView fitHeight="520.0" fitWidth="451.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/bgvchat30.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="141.0" layoutY="108.0" prefHeight="520.0" prefWidth="350.0" style="-fx-background-color: #f1f2f7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="136.0" layoutY="141.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #f1f2f7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Circle fx:id="image_circle" fill="DODGERBLUE" radius="65.0" stroke="BLACK" strokeType="INSIDE">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Circle>
+                  <Label fx:id="headerLabel" text="Create Profile" textFill="#4d4d4d">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXButton onAction="#imageSelectBtn_onAction" prefHeight="21.0" prefWidth="124.0" style="-fx-background-color: #9481f5;" text="Resim Seç" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontIcon iconColor="WHITE" iconLiteral="fas-plus-circle" iconSize="14" />
+                     </graphic>
+                  </JFXButton>
+                  <Label text="İsim">
+                     <VBox.margin>
+                        <Insets top="35.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontIcon iconLiteral="fas-user" />
+                     </graphic>
+                  </Label>
+                  <JFXTextField fx:id="name_textField" alignment="CENTER" focusColor="#9481f5" style="-fx-text-fill: #9481f5;" unFocusColor="BLACK">
+                     <VBox.margin>
+                        <Insets left="70.0" right="70.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label text="Soyisim">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontIcon iconLiteral="fas-user" />
+                     </graphic>
+                  </Label>
+                  <JFXTextField fx:id="surname_textField" alignment="CENTER" focusColor="#9481f5" style="-fx-text-fill: #9481f5;" unFocusColor="BLACK">
+                     <VBox.margin>
+                        <Insets left="70.0" right="70.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label fx:id="info_label" text="-">
+                     <VBox.margin>
+                        <Insets top="75.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXButton fx:id="saveBtn" onAction="#createProfileBtn_onAction" prefHeight="33.0" prefWidth="313.0" style="-fx-background-color: #9481f5;" text="Profili Tamamla" textFill="WHITE">
+                     <graphic>
+                        <FontIcon iconColor="WHITE" iconLiteral="fas-arrow-right" iconSize="15" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
