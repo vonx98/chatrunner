@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: main.Main
+Class-Path: sqlite-jdbc-3.39.2.0.jar commons-codec-1.15.jar
+
