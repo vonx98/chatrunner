@@ -1,5 +1,5 @@
 # chatrunner
-Java Chat Application
+Java Chat Application with JAVAFX
 
 this project is a chatserver project created with java.
 it allows connecting clients to communicate with each other by providing data transfer between the client and the server Dec.
